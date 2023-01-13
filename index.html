@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="oldcss.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
     </head>
     <body onload="checkCookie()">
 <!-- header -->
@@ -679,9 +681,28 @@
 
 
     </div>
+    <script>
+        //common reveal options to create reveal animations
+        ScrollReveal({
+          //reset: true,
+          distance: '60px',
+          duration: 2500,
+          delay: 400
+        });
+  
+        //target elements, and specify options to create reveal animations
+        ScrollReveal().reveal('.hero, .herotextheader',  { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('.heroimage', '.flp', { delay: 600, origin: 'bottom' });
+        ScrollReveal().reveal('.catt', { delay: 700, origin: 'right' });
+        ScrollReveal().reveal('.bulls', { delay: 500, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.bullbox', '.flipsideb', { delay: 500, origin: 'top' });
+        ScrollReveal().reveal('.caption-style-4 li', '.sectionthree', '.flp', { delay: 500, origin: 'left', interval: 200 });
+      </script>
+
         <script src="" async defer></script>
 
         <script src="index.js"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js'></script>
     </body>
 </html>
